@@ -3,8 +3,8 @@ Contributors: flyplugins
 Donate link: http://flyplugins.com/donate
 Tags: learning management system, ecommerce
 Requires at least: 4.8
-Tested up to: 6.7
-Stable tag: 1.5.0
+Tested up to: 6.8.2
+Stable tag: 1.6.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -73,6 +73,9 @@ Yes!
 2. This is the actual configuration screen where you can select courses that will be associated with a particular product as well as retroactively assign courses to current customers
 
 == Changelog ==
+
+= 1.6.1 =
+* New: Added new filter "woo_purchase_reset_enrollment_dates" to force enrollment date to reset for every purchase
 
 = 1.5.0 =
 * New: Teams for WooCommerce Memberships integration

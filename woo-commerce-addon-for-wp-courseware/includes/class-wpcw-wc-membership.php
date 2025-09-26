@@ -343,10 +343,14 @@ if ( ! class_exists( 'WPCW_WC_Membership' ) ) {
 							// $levelID not needed, just used to assign something interesting. It's
 							// the $courseIDToKeep that's the valuable bit.
 							$courseIDList[ $courseIDToKeep ] = $levelID;
-							if ( WPCW_check_course_expiration( $courseIDToKeep ) ){
+							if ( WPCW_check_course_expiration( $courseIDToKeep ) ) {
 								if ( true === apply_filters( 'wpcw_wc_addon_enroll_current_date', false ) ) {
-								$enrollment_dates[ $courseIDToKeep ] = current_time( 'timestamp' );
+									$enrollment_dates[ $courseIDToKeep ] = current_time( 'timestamp' );
 								}
+							}
+
+							if ( true === apply_filters( 'woo_purchase_reset_enrollment_dates', false ) ) {
+								$enrollment_dates[ $courseIDToKeep ] = current_time( 'timestamp' );
 							}
 						}
 					}

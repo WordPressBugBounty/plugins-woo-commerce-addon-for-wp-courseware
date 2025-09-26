@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Woo Commmerce Addon for WP Courseware
- * Version:     1.5.0
+ * Version:     1.6.1
  * Plugin URI:  http://flyplugins.com
  * Description: The official extension for WP Courseware to add integration for WooCommmerce.
  * Author:      Fly Plugins
@@ -11,14 +11,14 @@
  * Domain Path: /languages
  *
  * @package WPCW_WC_Addon
- * @since 1.5.0
+ * @since 1.6.1
  */
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
 // Constants.
-define( 'WPCW_WC_ADDON_VERSION', '1.5.0' );
+define( 'WPCW_WC_ADDON_VERSION', '1.6.1' );
 
 /**
  * WP Courseware WooCommerce Addon.
